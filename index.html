@@ -2,60 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Technotronics | Automation Consortium</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+
+  <!-- Font and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f5f7fa;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #e6f0ff, #ffffff);
       color: #333;
-      text-align: center;
-      padding: 20px;
+      padding: 40px 20px;
     }
+
     .container {
-      max-width: 700px;
+      max-width: 720px;
       margin: auto;
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 14px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      background: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
     }
+
     h1 {
-      color: #111;
-      font-size: 2rem;
-      margin-bottom: 0.3rem;
+      font-size: 2.5rem;
+      color: #1a1a1a;
+      margin-bottom: 0.5rem;
     }
+
     p.tagline {
-      font-size: 1rem;
-      color: #666;
+      font-size: 1.1rem;
+      color: #555;
       margin-bottom: 2rem;
     }
+
     .btn {
-      display: block;
-      margin: 12px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px auto;
       padding: 12px 20px;
-      background: #007bff;
+      background-color: #007bff;
       color: white;
-      border-radius: 8px;
+      border-radius: 10px;
       text-decoration: none;
-      width: 80%;
-      max-width: 300px;
+      font-weight: 600;
+      width: 90%;
+      max-width: 320px;
       transition: background 0.3s;
     }
+
     .btn:hover {
-      background: #0056b3;
+      background-color: #0056b3;
     }
+
+    .btn i {
+      margin-right: 10px;
+    }
+
     iframe {
       width: 100%;
-      height: 300px;
-      border: none;
+      height: 320px;
       margin-top: 30px;
-      border-radius: 10px;
+      border-radius: 12px;
+      border: 0;
     }
+
     footer {
-      margin-top: 30px;
+      margin-top: 35px;
       font-size: 0.9rem;
-      color: #aaa;
+      color: #999;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .btn {
+        font-size: 0.95rem;
+      }
     }
   </style>
 </head>
@@ -64,12 +99,23 @@
     <h1>Technotronics</h1>
     <p class="tagline">CCTV Solutions • Smart Security • Trusted Service</p>
 
-    <a class="btn" href="https://facebook.com/technotronics" target="_blank">📘 Facebook</a>
-    <a class="btn" href="https://instagram.com/technotronics" target="_blank">📸 Instagram</a>
-    <a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank">💬 WhatsApp</a>
-    <a class="btn" href="https://youtube.com/@technotronics" target="_blank">▶️ YouTube</a>
+    <a class="btn" href="https://facebook.com/technotronics" target="_blank">
+      <i class="fab fa-facebook-square"></i> Facebook
+    </a>
 
-    <!-- Replace the embed URL below with your own Google Map embed URL -->
+    <a class="btn" href="https://instagram.com/technotronics" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+
+    <a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+
+    <a class="btn" href="https://youtube.com/@technotronics" target="_blank">
+      <i class="fab fa-youtube"></i> YouTube
+    </a>
+
+    <!-- Update the embed URL below with your actual Google Map -->
     <iframe
       src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_LINK_HERE"
       allowfullscreen=""
