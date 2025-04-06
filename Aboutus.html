@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technotronics</title>
+  <link rel="icon" href="Image_assets/favicon.png" type="image/png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 2.618rem 1rem;
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+      margin-right: 1.618rem;
+    }
+
+    .title-block {
+      flex: 1;
+      text-align: center;
+    }
+
+    .site-title {
+      font-size: 3rem;
+      color: #007aff;
+      font-weight: bold;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      background-color: #007aff;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.618rem 1.618rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-grow: 1;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      position: relative;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 20px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      left: 20px;
+      bottom: 8px;
+      width: 0%;
+      height: 2px;
+      background-color: white;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: calc(100% - 40px);
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+      filter: brightness(0) invert(1);
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+      filter: brightness(0.9) invert(1);
+    }
+
+    footer {
+      background-color: #f0f0f0;
+      padding: 2rem;
+      font-size: 0.95rem;
+      color: #333;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .address,
+    .contact-info {
+      max-width: 300px;
+      line-height: 1.5;
+    }
+
+    footer div.copyright {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .logo {
+        margin: 0 0 10px;
+      }
+
+      .title-block {
+        text-align: center;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="Image_assets/logo.png" alt="Technotronics Logo" class="logo" />
+    <div class="title-block">
+      <h1 class="site-title">Technotronics</h1>
+      <p class="tagline">Automation Consortium</p>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="Aboutus.html">About Us</a>
+      <a href="Services.html">Services</a>
+      <a href="Contactus.html">Contact Us</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/TechnotronicsAutomation/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg" alt="Facebook" />
+      </a>
+      <a href="https://www.instagram.com/technotronicsautomation/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="Instagram" />
+      </a>
+      <a href="https://wa.me/919500776336" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg" alt="WhatsApp" />
+      </a>
+      <a href="https://www.youtube.com/@technotronics-Automation" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/youtube.svg" alt="YouTube" />
+      </a>
+    </div>
+    </div>
+  </nav>
+
+  <!-- About Us Content -->
+  <section style="padding: 2rem; text-align: center;">
+    <h2>About Technotronics</h2>
+    <p>
+      Technotronics is a leading provider of CCTV installation and automation solutions, specializing in security systems tailored to the unique needs of our clients. 
+      Our services include the installation of high-quality CCTV cameras, security monitoring systems, and customized automation solutions designed to enhance security and streamline operations.
+    </p>
+    <p>
+      Our team consists of skilled professionals with years of experience in the security industry. We aim to deliver reliable, efficient, and cost-effective solutions that provide peace of mind for our clients. 
+      Whether for residential, commercial, or industrial properties, we offer a wide range of services to meet your needs.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="address">
+      <strong>Address:</strong><br>
+      Technotronics,<br>
+      No.29/210, 1st Middle Street,<br>
+      Thyagaraja Nagar,<br>
+      Tirunelveli, Tamil Nadu – 627011<br>
+      India
+    </div>
+    <div class="contact-info">
+      <strong>Contact:</strong><br>
+      +91-9500776336<br>
+      +91-462-2532336<br>
+      technotronics.queries@gmail.com
+    </div>
+    <div class="copyright">
+      &copy; 2025 Technotronics. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
